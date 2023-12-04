@@ -1,0 +1,50 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run All Test",
+      "type": "dart",
+      "request": "launch",
+      "program": "tests/",
+    },
+    {
+      "name": "launch-dev-debug-layout",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "args": [
+        "--flavor",
+        "dev",
+        "--dart-define",
+        "DEBUG_MODE=DEBUG_LAYOUT",
+      ]
+    },
+    {
+      "name": "launch-dev-debug",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "args": [
+        "--flavor",
+        "dev",
+        "--dart-define",
+        "DEBUG_MODE=DEBUG_ONLY",
+      ]
+    },
+    {
+      "name": "launch-prod-debug",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "args": [
+        "--flavor",
+        "prod",
+        "--dart-define",
+        "DEBUG_MODE=DEBUG_ONLY",
+      ]
+    },
+  ]
+}
